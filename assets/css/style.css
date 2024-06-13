@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 505px 583px repeat(2,507px) 600px 140px;
+    grid-template-areas:"header""main1""main2""main3""main4""footer" ;
+}
+header {
+    background-image: url("../imagens/Header\ Background.png");
+    background-size: cover;
+    background-position: center;
+    grid-area: header;
+}
+header h1 {
+    font-family:'Luckiest Guy';
+    width: 250px;
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    padding:40px 0 0 25px;
+}
+header p {
+    width: 384px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    padding:0 0 0 25px ;
+    font-size: 16px;
+    font-weight: 400;
+}
+header button {
+    font-family: 'Open Sans';
+    padding: 18px 50px;
+   margin: 10px 20px;
+   border-radius: 100px;
+   border: none;
+}
+#btn {
+    display: flex;
+    flex-direction:column ;
+}
+#btnblack {
+    color: white;
+    background-color: black;
+}
+#sect1 { 
+    grid-area: main4;
+}
+#sect1 img {
+    display: block;
+    margin: 0 auto;
+    padding:40px 20px 10px 20px;
+    min-width: 379px;
+}
+ #sect1 h2 {
+    color: rgba(35, 39, 42, 1);
+    font-family: 'Open Sans';
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 0 20px 0 20px;
+    margin-bottom: 0;
+}
+ section p {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 20px 10px 20px;
+}
+#sect2 { 
+    grid-area:main2 ;
+}
+#sect2 img {
+    display: block;
+    margin: 0 auto;
+    min-width: 379px;
+    max-width: 607px;
+    padding:40px 20px 10px 20px;
+}
+#sect2 h2 {
+    color: rgba(35, 39, 42, 1);
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0 20px 0 20px;
+    margin-bottom: 0;
+}
+#sect3 {
+    grid-area:main3 ;
+}
+#sect3 img {
+    display: block;
+    margin: 0 auto;
+    min-width: 379px;
+    max-width: 607px;
+    padding:40px 20px 10px 20px;
+}
+#sect3 h2 {
+    color: rgba(35, 39, 42, 1);
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0 20px 0 20px;
+    margin-bottom: 0;
+}
+#sect4 {
+    grid-area:main1;
+}
+#sect4 img {
+    display: block;
+    margin: 0 auto;
+    padding:0 50px 10px 50px;
+}
+#sect4 h2 {
+    color: rgba(35, 39, 42, 1);
+    font-family: 'Luckiest Guy';
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 20px 0 20px;
+    margin-bottom: 0;
+}
+footer {
+    text-align: center;
+    grid-area:footer ;
+    background-image: linear-gradient(rgb(23, 25, 27),rgb(29, 32, 34),rgba(35, 39, 42, 1));
+}
+footer img{
+    margin-top: 40px;
+}
+
+@media screen and (min-width:0) and (max-width:800px) {
+   #sect4 img {
+    width: 379px;
+   }
+}
+@media screen and (min-width:650px)  {
+header h1 {
+    width:313px ;
+    font-size:calc(1.5rem + 2vw);
+    text-align: center;
+   margin: auto;
+}
+header p{
+    width: 600px;
+    text-align: center;
+    margin: 30px auto 0 auto;  
+}
+#btn {
+    padding-top: 50px;
+}
+#sect1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img2 {
+    text-align: center;
+}
+#sect1 img {
+    width: 407px;
+  margin: 0;
+}
+.text2 { 
+    padding-top: 35px;
+    width: 300px;
+    height: 400px;
+}
+#sect2{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text3{
+    order: -1;
+    padding-top: 40px;
+    width: 300px;
+    height: 400px;
+}
+#sect2 h2 {
+font-size: 1.6rem;
+}
+#sect2 img {
+    width: 407px;
+}
+#sect3{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text4{
+    padding-top: 20px;
+    width: 300px;
+    height: 400px;
+}
+#sect3 img {
+    width: 407px;
+}
+#sect3 h2{
+    font-size: 1.6rem;
+}
+#sect4{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#h2t {
+    text-align: center;
+    width: 400px;
+    height: 120px;
+}
+#sect4 h2 {
+    font-size: 2.2rem;
+}
+#parag{
+    text-align: center;
+    width: 860px;
+    height: 100px;
+}
+#sect4 img{
+    width: 557px;
+}
+}
+@media screen and (min-width:1000px){
+    #btn {
+        flex-direction: row;
+        justify-content: center;
+    padding-top: 50px;
+    }
+    header {
+        background-image: url('../imagens/Header\ Background\ \(1\).png');
+    }
+}
+@media screen and (min-width:1300px) {
+    #sect1 img {
+        width: 607px;
+    }
+    #sect1 h2 {
+        font-size: 2.3rem;
+        }
+    .text2 {
+    padding-top: 35px;
+    width: 340px;
+    height: 400px;
+    }
+    #sect2 img {
+        width: 607px;
+    }
+    #sect2 h2 {
+        font-size: 2.3rem;
+        }
+        #sect3 img {
+            width: 607px;
+        }
+        #sect3 h2 {
+            font-size: 2.3rem;
+            }
+            #sect4 img {
+                width: 607px;
+            }
+            #sect4 h2 {
+                font-size: 2.4rem;
+                }
+                #h2t {
+                    width: 460px;
+                    height: 120px;
+                }
+                body{
+                    grid-template-rows: 505px 583px repeat(2,507px) 650px 140px;
+                }
+                footer img {
+                    width: 200px;
+                }
+}
